@@ -36,7 +36,9 @@ export const SideBar = () => {
       </div>
 
       <div className="mt-10">
-        <Button className="w-full">+Create New</Button>
+        <Link href={"/create-course"}>
+          <Button className="w-full">Create New</Button>
+        </Link>
 
         <div className="mt-6">
           {MenuList.map((menu, index) => (
